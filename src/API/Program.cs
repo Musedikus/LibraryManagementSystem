@@ -1,3 +1,4 @@
+using API.Middleware;
 using API.ServiceExtension;
 using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -25,6 +26,7 @@ using (var scope = app.Services.CreateScope())
     dbContext.Database.Migrate(); // Applies migrations on app startup
 }
 
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -34,6 +36,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
+app.UseMiddleware<TokenVersionValidationMiddleware>();
 app.UseAuthorization();
 
 app.MapControllers();
