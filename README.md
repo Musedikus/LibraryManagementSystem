@@ -116,7 +116,7 @@ DELETE /api/books/{id} – Delete a book (authentication required)
 ### 9. **NOTE NOTE NOTE NOTE **.........................................................................
 ✅ dotnet run must be run from the src/API directory.
 
-✅ Swagger UI is enabled in development by default.
+✅ Ensure to update the connection string in appsettings.Development.json to your own appsetting(SSMS was used)
 
 ✅ All error responses are returned in a structured ResultModel<T>.
 
