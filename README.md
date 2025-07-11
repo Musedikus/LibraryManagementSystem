@@ -95,7 +95,7 @@ appsettings.json (src/API/appsettings.Development.json)
 Email: testuser@example.com
 Password: Password123
 
-### 8 API ENDPOINTS 
+### 8. API ENDPOINTS 
 POST /api/auth/register – Register a new user
 
 POST /api/auth/login – Login and receive a JWT
@@ -113,7 +113,7 @@ PUT /api/books/{id} – Update a book (authentication required)
 DELETE /api/books/{id} – Delete a book (authentication required)
 
 
-**NOTE NOTE NOTE NOTE **.........................................................................
+### 9. **NOTE NOTE NOTE NOTE **.........................................................................
 ✅ dotnet run must be run from the src/API directory.
 
 ✅ Swagger UI is enabled in development by default.
