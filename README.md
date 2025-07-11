@@ -100,7 +100,7 @@ POST /api/auth/register – Register a new user
 
 POST /api/auth/login – Login and receive a JWT
 
-POST /api/auth/logout – Logout and rotate token version
+POST /api/auth/logout – Logout and rotate token version(This invalidates token so it cant be used again after logout, user will need to log in again)
 
 GET /api/books – Get all books (with search and pagination support)
 
