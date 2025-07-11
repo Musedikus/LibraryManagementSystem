@@ -97,14 +97,14 @@ Password: Password123
 
 ### 8 API ENDPOINTS 
 Method	      Route                 	Description
-POST	    /api/auth/register      	Register a new user
-POST	    /api/auth/login	          Login and receive a JWT
-POST	    /api/auth/logout	        Logout and rotate token version
-GET	     /api/books	                Get all books (with search/paging)
-GET	     /api/books/{id}	          Get book by ID
-POST	    /api/books	              Add a new book (auth required)
-PUT	    /api/books/{id}	            Update book (auth required)
-DELETE	/api/books/{id}	            Delete book (auth required)
+-POST	    /api/auth/register      	Register a new user
+-POST	    /api/auth/login	          Login and receive a JWT
+-POST	    /api/auth/logout	        Logout and rotate token version
+-GET	     /api/books	                Get all books (with search/paging)
+-GET	     /api/books/{id}	          Get book by ID
+-POST	    /api/books	              Add a new book (auth required)
+-PUT	    /api/books/{id}	            Update book (auth required)
+-DELETE	/api/books/{id}	            Delete book (auth required)
 
 
 **NOTE NOTE NOTE NOTE **.........................................................................
