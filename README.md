@@ -78,7 +78,7 @@ https://localhost:5163/swagger
 This will open the Swagger UI where you can explore and test all the API endpoints.
 💡 If you're using Postman instead of Swagger, also use this same base URL for your API calls
 
-#### 5.** Configuration**
+#### 5.**Configuration**
 appsettings.json (src/API/appsettings.Development.json)
 "ConnectionStrings": {
   "DefaultConnection": "Server=.;Database=LibraryDb;Trusted_Connection=True;MultipleActiveResultSets=true"
