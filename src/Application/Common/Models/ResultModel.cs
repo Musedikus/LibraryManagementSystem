@@ -13,14 +13,16 @@ namespace Application.Common.Models
         public T? Data { get; set; }
         public List<string>? Errors { get; set; }
         public int StatusCode { get; set; }
+        public int TotalCount { get; set; } 
 
-        public static ResultModel<T> SuccessResponse(T data, string message = "Success", int statusCode = 200) =>
+        public static ResultModel<T> SuccessResponse(T data, string message = "Success", int statusCode = 200,int totalCount=0) =>
             new()
             {
                 Success = true,
                 Message = message,
                 Data = data,
-                StatusCode = statusCode
+                StatusCode = statusCode,
+                TotalCount = totalCount
             };
 
         public static ResultModel<T> Failure(string message = "An error occurred", List<string>? errors = null, int statusCode = 400) =>

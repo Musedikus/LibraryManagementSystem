@@ -146,7 +146,7 @@ namespace Application.Services
                         b.Title.Contains(request.Search) ||
                         b.Author.Contains(request.Search));
                 }
-
+                var totalCount = await query.CountAsync();
                 // Apply pagination
                 var books = await query
                     .OrderBy(b => b.Title)
@@ -166,7 +166,8 @@ namespace Application.Services
                 return ResultModel<IEnumerable<BookDto>>.SuccessResponse(
                     data: dtos,
                     message: "Books retrieved successfully",
-                    statusCode: 200
+                    statusCode: 200,
+                    totalCount : totalCount
                 );
             }
             catch (Exception ex)

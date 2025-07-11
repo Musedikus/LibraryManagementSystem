@@ -78,7 +78,7 @@ namespace API.ServiceExtension
                     Name = "Authorization",
                     In = ParameterLocation.Header,
                     Type = SecuritySchemeType.Http,
-                    Description = "Enter JWT Bearer token below. Example: `Bearer {your_token}`",
+                    Description = "Enter only the JWT Bearer token below. Example: `{your_token}` Do not add Bearer before token" ,
 
                     Reference = new OpenApiReference
                     {
