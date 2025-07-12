@@ -51,12 +51,15 @@ Follows Clean Architecture with the following layers:
 
 ### 1. **Clone the Project**
  ✅ git clone https://github.com/YourUsername/LibraryManagementSystem.git
+ **NOTE**: Navigate to src/API folder and Open appsettings.Development.json and update the DefaultConnection string to your local SQL Server
+        Ensure your SQL Server (e.g. via SSMS) is running before moving to **step 2**
+        
 ### 2. **Navigate to API Folder**
 cd LibraryManagementSystem/src/API
 
-### 3. **Restore and Run**
- ✅ dotnet restore
- ✅ dotnet run
+### 3. **Running the project**
+  -First run command "dotnet restore"
+  -Then run command "dotnet run"
 
 from the src/API folder, the following happens automatically:
 ✅ EF Core Migrations: Any pending migrations are applied to the database.
